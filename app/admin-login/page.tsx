@@ -1,0 +1,1 @@
+import LoginForm from './form';export const dynamic='force-dynamic';export const metadata={title:'Administrator sign in',robots:{index:false,follow:false}};export default function AdminLogin(){return <LoginForm/>}

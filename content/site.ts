@@ -1,4 +1,4 @@
-export const origin='https://a1-turf-hardscape-colorado.typical-sammich.chatgpt.site';
+export const origin=(process.env.NEXT_PUBLIC_SITE_URL||(process.env.VERCEL_PROJECT_PRODUCTION_URL?'https://'+process.env.VERCEL_PROJECT_PRODUCTION_URL:'http://localhost:3000')).replace(/\/$/,'');
 export const business={name:'A1 Turf & Hardscape LLC',phone:'(303) 874-8895',tel:'+13038748895',instagram:'https://www.instagram.com/a1.turf.hardscape.llc/',nextdoor:'https://nextdoor.com/pages/lawn-guru-bros-denver-co/'};
 export const services=[
   {

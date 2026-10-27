@@ -1,7 +1,7 @@
 'use client';
 import React,{useEffect,useRef,useState} from 'react';
 import {services,business,generalFaqs} from '../content/site';
-import projects from '../public/media/projects.json';
+import projects from '../content/projects.json';
 import RealAreaMap from './area-map';
 import PavingTransformation from './scroll-transformation';
 export const photo=(id:number)=>projects.find(p=>p.id===id)!;
