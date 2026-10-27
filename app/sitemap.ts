@@ -1,0 +1,1 @@
+import {origin,pagePaths} from '../content/site';export default function sitemap(){return pagePaths.map(p=>({url:origin+(p?'/'+p+'/':'/'),lastModified:new Date('2026-10-27'),changeFrequency:p==='gallery'?'monthly':'yearly',priority:p===''?1:p==='services'||p==='gallery'?0.9:0.7}))}

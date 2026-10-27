@@ -1,0 +1,2 @@
+import {env} from 'cloudflare:workers';
+export async function GET(){try{const id=crypto.randomUUID();const now=Date.now();await env.DB!.prepare('DELETE FROM challenges WHERE created_at < ?').bind(now-86400000).run();await env.DB!.prepare('INSERT INTO challenges (id,created_at,used) VALUES (?,?,0)').bind(id,now).run();return Response.json({token:id},{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({error:'Secure form temporarily unavailable. Please call (303) 874-8895.'},{status:503})}}

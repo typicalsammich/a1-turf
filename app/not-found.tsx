@@ -1,0 +1,1 @@
+export default function NotFound(){return <section className="page-head not-found"><span className="eyebrow">404 / A PATH LESS TRAVELED</span><h1>Let’s find<br/>your way home.</h1><p>This page isn’t part of the landscape.</p><a className="button" href="/">Back to home</a><a className="text-link" href="/gallery/">Explore our work</a></section>}

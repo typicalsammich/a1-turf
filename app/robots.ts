@@ -1,0 +1,1 @@
+import {origin} from '../content/site';export default function robots(){return {rules:{userAgent:'*',allow:'/',disallow:['/api/','/project-inbox/']},sitemap:origin+'/sitemap.xml'}}
