@@ -1,0 +1,3 @@
+import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+export const estimates=sqliteTable('estimates',{id:text('id').primaryKey(),createdAt:integer('created_at').notNull(),name:text('name').notNull(),email:text('email').notNull(),phone:text('phone').notNull(),city:text('city').notNull(),answers:text('answers').notNull(),files:text('files').notNull(),rateKey:text('rate_key').notNull()});
+export const challenges=sqliteTable('challenges',{id:text('id').primaryKey(),createdAt:integer('created_at').notNull(),used:integer('used').notNull().default(0)});
